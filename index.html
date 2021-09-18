@@ -17,60 +17,6 @@
             .bg {
                 background-color: var(--bg);
             }
-            nav a {
-                color:var(--bg);
-                transition: color .5s;
-            }
-
-            nav a:hover{
-                color:white
-            }
-
-            .arrow {
-                transition: border .5s;
-                border: solid var(--bg);
-                margin-top: 10px;
-                margin-right:2vh;
-                border-width: 0 2vh 2vh 0;
-                display: inline-block;
-                padding: 1.75vh;
-            }
-
-            nav a:hover .arrow{
-                border: solid white;
-                border-width: 0 2vh 2vh 0;
-            }
-
-            nav div{
-                position: absolute;
-                top:4vh;
-                right:4vh;
-                text-align: right;
-            }
-            nav svg{
-                position: absolute;
-                top:0;
-                right:0;
-                height: 40vh;
-                width:40vh;
-                fill:var(--accent)
-            }
-            nav h3{
-                font-size: 3vh;
-            }
-            nav h1{
-                font-size: 4vh;
-            }
-
-            .right {
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-            }
-
-            nav h1,h3{
-                margin: 5;
-                text-transform: uppercase;
-            }
 
             .half-center{
                 height:50vh;
@@ -118,17 +64,99 @@
                     padding: 95px 0 95px 0;
                 }
             }
+
+            .arrow {
+                transition: border .5s;
+                border: solid var(--bg);
+                margin-top: 10px;
+                margin-right:2vh;
+                display: inline-block;
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            @media screen and (min-width: 641px){
+                .arrow{
+                    border-width: 0 2vh 2vh 0;
+                    padding: 1.75vh;
+                }
+                nav a {
+                    color:var(--bg);
+                    transition: color .5s;
+                }
+
+                nav a:hover{
+                    color:white
+                }
+
+                nav a:hover .arrow{
+                    border: solid white;
+                    border-width: 0 2vh 2vh 0;
+                }
+
+                nav div{
+                    position: absolute;
+                    top:4vh;
+                    right:4vh;
+                    text-align: right;
+                }
+                nav svg{
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    height: 40vh;
+                    width:40vh;
+                    fill:var(--accent)
+                }
+                nav h3{
+                    font-size: 3vh;
+                }
+                nav h1{
+                    font-size: 4vh;
+                }
+
+                nav h1,h3{
+                    margin: 5;
+                    text-transform: uppercase;
+                }
+            }
             @media screen and (max-width: 640px){
+                .arrow  {
+                    border-width: 0 1.25vh 1.25vh 0;
+                    padding: 1.75vh;
+                }
+                nav svg {
+                    display: none;
+                }
+                nav a{
+                    color:var(--bg);
+                    text-decoration: none;
+                }
+                nav {
+                    background-color: var(--accent);
+                    padding: 7vw;
+                }
+                .arrow{
+                    float: right;
+                    display: inline-block;
+                    margin-top: -45px;
+                }
+                nav h1, nav h3{
+                    margin: 0px;
+                }
                 .half-center{
                     height:33vh;
-                    padding: 10vw;
+                    padding: 7vw;
                 }
                 .half-center h1{
                     font-size:15vw;
                     text-align: left;
                 }
                 .container{
-                    padding: 10vw;
+                    padding: 7vw;
                 }
                 .container p{
                     font-size: 24px;
@@ -138,6 +166,9 @@
     </head>
 
     <body>
+        <div class="half-center">
+            <h1>Hello. I'm Tristan.</h1>
+        </div>
         <nav>
             <a href="x.tristans.ca">
                 <svg viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -150,13 +181,10 @@
                 </div>
             </a>
         </nav>
-        <div class="half-center">
-            <h1>Hello. I'm Tristan.</h1>
-        </div>
         <div class="bg">
         <div class="container">
             <p>I'm a U1 student at McGill University who's passionate about next-gen technologies as well as using technology to connect people and ideas.</p>
         </div>
-    </div>
+        </div>
     </body>
 </html>
