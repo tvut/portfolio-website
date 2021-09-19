@@ -17,7 +17,12 @@
             .bg {
                 background-color: var(--bg);
             }
-
+            h2{
+                font-size: 56px;
+            }
+            h4{
+                font-size: 36px;
+            }
             .half-center{
                 height:50vh;
                 width:100vw;
@@ -47,7 +52,7 @@
                 font-weight: 900;
             }
             .container{
-                padding: 10vh 8vw 10vh 8vw
+                padding: 8vh 8vw 8vh 8vw
             }
             .container p{
                 font-size:36px;
@@ -61,7 +66,7 @@
                     max-width:1074px;
                     margin-left:auto;
                     margin-right:auto;
-                    padding: 95px 0 95px 0;
+                    padding: 70px 0 70px 0;
                 }
             }
 
@@ -77,6 +82,46 @@
                 transform: rotate(-45deg);
                 -webkit-transform: rotate(-45deg);
             }
+                .overflow{
+                    overflow-x: auto;
+                    color:black;
+                    flex-wrap: nowrap;
+                    width: 90vw;
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .project{
+                    display: block;
+                    height: 40vh;
+                    width: 40vh;
+                    float:left;
+                    flex-shrink: 0;
+                    margin: 1.5vh;
+                    padding: 3vh;
+                    position: relative;
+                    border: var(--accent) solid 5px;
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+                .project svg{
+                    fill: var(--accent);
+                }
+                .svg-top{
+                    top: -5px;
+                    right: -5px;
+                    position: absolute;
+                    width: 10vh;
+                    height :10vh;
+                }
+                .svg-bottom{
+                    bottom: -5px;
+                    left: -5px;
+                    position: absolute;
+                    width: 10vh;
+                    height :10vh;
+                    transform: rotate(180deg);
+                }
 
             @media screen and (min-width: 641px){
                 .arrow{
@@ -187,5 +232,88 @@
             <p>I'm a U1 student at McGill University who's passionate about next-gen technologies as well as using technology to connect people and ideas.</p>
         </div>
         </div>
+        <div class="container" style="padding-top: 0; padding-bottom: 0; color: black;">
+            <h2>Projects</h2>
+        </div>
+        <div class="overflow">
+            <div class="project">
+                <!-- SVG Corners -->
+                <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <!-- End SVG Corners -->
+                <div class="inner">
+                    <h4>Name</h4>
+                </div>
+            </div>
+            <div class="project">
+                <!-- SVG Corners -->
+                <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <!-- End SVG Corners -->
+                <div class="inner">
+                    <h4>Name</h4>
+                </div>
+            </div>
+            <div class="project">
+                <!-- SVG Corners -->
+                <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <!-- End SVG Corners -->
+                <div class="inner">
+                    <h4>Name</h4>
+                </div>
+            </div>
+            <div class="project">
+                <!-- SVG Corners -->
+                <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <!-- End SVG Corners -->
+                <div class="inner">
+                    <h4>Name</h4>
+                </div>
+            </div>
+            <div class="project">
+                <!-- SVG Corners -->
+                <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <!-- End SVG Corners -->
+                <div class="inner">
+                    <h4>Name</h4>
+                </div>
+            </div>
+            <div class="project">
+                <!-- SVG Corners -->
+                <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L100 100 L100 0 Z" />
+                </svg>
+                <!-- End SVG Corners -->
+                <div class="inner">
+                    <h4>Name</h4>
+                </div>
+    </div>
+</div>
     </body>
 </html>
