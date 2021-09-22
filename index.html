@@ -82,7 +82,7 @@
                 transform: rotate(-45deg);
                 -webkit-transform: rotate(-45deg);
             }
-                .overflow{
+                /* .overflow{
                     overflow-x: auto;
                     color:black;
                     flex-wrap: nowrap;
@@ -90,6 +90,12 @@
                     display: flex;
                     margin-left: auto;
                     margin-right: auto;
+                } */
+                .overflow{
+                    padding: 30px;
+                    overflow-x:auto;
+                    display: flex;
+                    flex-wrap: nowrap;
                 }
                 .project{
                     display: block;
@@ -208,6 +214,26 @@
                     font-size: 20px;
                 }
             }
+            .card{
+                background-color: white;
+                color:black;
+                box-shadow:         0px 0px 15px 0px rgba(240, 208, 10, 0.5);
+                margin:30px;
+                flex-shrink: 0;
+            }
+            .card {
+                max-width: 400px;
+            }
+            .card p {
+                font-size:18px;
+                color: black;
+            }
+            .card img{
+                width:100%;
+            }
+            .inner{
+                padding:30px;
+            }
         </style>
     </head>
 
@@ -230,90 +256,154 @@
         <div class="bg">
         <div class="container">
             <p>I'm a U1 student at McGill University who's passionate about next-gen technologies as well as using technology to connect people and ideas.</p>
+            <h2>Projects</h2>
+            <div class="card">
+                <img src="plugin.png"/>
+                <div class="inner">
+                <h3>COVID Sentiment Analysis</h3>
+                <p>Scraped comments on YouTube videos that matched keywords and location parameters then analyzed the comments using a trained sentiment analysis model to examine different COVID sentiments by region.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="plugin.png"/>
+                <div class="inner">
+                <h3>TuyaSync</h3>
+                <p>Program that would sample what was on a computer screen then change linked smart lights color to the average color from the screen.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="plugin.png"/>
+                <div class="inner">
+                <h3>WP Masonry Gallery</h3>
+                <p>A rewrite of a Wordpress gallery plugin with the goal of generating and serving images with resolution more correctly suited for the device screen size to save bandwidth and server load.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="plugin.png"/>
+                <div class="inner">
+                <h3>PACMUN Website</h3>
+                <p>A complete overhaul of the Pacific Model United Nations website with an emphasis on fast loading times. Optimized the home page to load to usable in under 3 seconds on a 3G connection. Rebuilt committees pages to serve out of an object-orientated PHP database using mod-rewrite.</p>
+                </div>
+            </div>
         </div>
         </div>
         <div class="container" style="padding-top: 0; padding-bottom: 0; color: black;">
             <h2>Projects</h2>
         </div>
         <div class="overflow">
-            <div class="project">
-                <!-- SVG Corners -->
+            <div class="card">
+                <img src="plugin.png"/>
+                <div class="inner">
+                <h3>COVID Sentiment Analysis</h3>
+                <p>Scraped comments on YouTube videos that matched keywords and location parameters then analyzed the comments using a trained sentiment analysis model to examine different COVID sentiments by region.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tuyasync.png"/>
+                <div class="inner">
+                <h3>TuyaSync</h3>
+                <p>Program that would sample what was on a computer screen then change linked smart lights color to the average color from the screen.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="todo.png"/>
+                <div class="inner">
+                <h3>React ToDo</h3>
+                <p>Simple To-do app written in React that takes advantage of local browser storage in order to store and keep track of to-dos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="plugin.png"/>
+                <div class="inner">
+                <h3>WP Masonry Gallery</h3>
+                <p>A rewrite of a Wordpress gallery plugin with the goal of generating and serving images with resolution more correctly suited for the device screen size to save bandwidth and server load.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pacmun.png"/>
+                <div class="inner">
+                <h3>PACMUN Website</h3>
+                <p>A complete overhaul of the Pacific Model United Nations website with an emphasis on fast loading times. Optimized the home page to load to usable in under 3 seconds on a 3G connection. Rebuilt committees pages to serve out of an object-orientated PHP database using mod-rewrite.</p>
+                </div>
+            </div>
+            <!-- <div class="project">
+                 
                 <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
                 <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
-                <!-- End SVG Corners -->
+                 
                 <div class="inner">
                     <h4>Name</h4>
                 </div>
             </div>
             <div class="project">
-                <!-- SVG Corners -->
+                 
                 <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
                 <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
-                <!-- End SVG Corners -->
+                 
                 <div class="inner">
                     <h4>Name</h4>
                 </div>
             </div>
             <div class="project">
-                <!-- SVG Corners -->
+                 
                 <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
                 <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
-                <!-- End SVG Corners -->
+                 
                 <div class="inner">
                     <h4>Name</h4>
                 </div>
             </div>
             <div class="project">
-                <!-- SVG Corners -->
+                 
                 <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
                 <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
-                <!-- End SVG Corners -->
+                 
                 <div class="inner">
                     <h4>Name</h4>
                 </div>
             </div>
             <div class="project">
-                <!-- SVG Corners -->
+                 
                 <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
                 <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
-                <!-- End SVG Corners -->
+                 
                 <div class="inner">
                     <h4>Name</h4>
                 </div>
             </div>
             <div class="project">
-                <!-- SVG Corners -->
+                 
                 <svg class="svg-top" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
                 <svg class="svg-bottom" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L100 100 L100 0 Z" />
                 </svg>
-                <!-- End SVG Corners -->
+                 
                 <div class="inner">
                     <h4>Name</h4>
                 </div>
-    </div>
+    </div> -->
 </div>
     </body>
 </html>
