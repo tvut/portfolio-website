@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet" />
     <style>
-        html{
-            width:100vw;
+        html {
+            width: 100vw;
             overflow-x: hidden;
         }
+
         * {
             box-sizing: border-box;
         }
@@ -207,51 +208,101 @@
                 margin: 5;
                 text-transform: uppercase;
             }
+
             .card {
-            max-width: 400px;
-            margin: 30px;
+                max-width: 400px;
+                margin: 30px;
+            }
+
+            .card h3 {
+                font-size: 22px;
+            }
+
+            .card p {
+                font-size: 22px;
+            }
+
+            .inner {
+                padding: 20px 30px 20px 30px;
+            }
+
+            .bottom {
+                font-size: 18px;
+                ;
+                padding: 20px;
+            }
+
+            .bottom i {
+                border-width: 0 .75vh .75vh 0;
+                padding: .75vh;
+            }
         }
-        .card h3{
-            font-size: 22px;
+
+        .experience-card h3,
+        .experience-card h4,
+        .experience-card h5 {
+            margin-top: 8px;
+            margin-left: 0px;
+            margin-bottom: 8px;
         }
-        .card p{
-            font-size: 22px;
+
+        .experience-card h4 {
+            font-size: 28px;
         }
-        .inner{
-            padding: 20px 30px 20px 30px;
+
+        .experience-card h5 {
+            font-size: 14px;
         }
-        .bottom{
-            font-size: 18px;;
+
+        .experience-card {
             padding: 20px;
+            border-left: 5px var(--bg) solid;
+            justify-content: flex-start;
         }
-        .bottom i{
-            border-width: 0 .75vh .75vh 0; 
-            padding: .75vh;
+
+        .titles,
+        .text {
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
         }
+
+        .text {
+            padding-left: 40px;
+        }
+
+        .text p {
+            font-size: 22px;
         }
 
         @media screen and (max-width: 640px) {
-            .bottom{
-            font-size: 13px;
-            padding: 15px;
-        }
-        .bottom i{
-            border-width: 0 .55vh .55vh 0; 
-            padding: .55vh;
-        }
-            .inner{
-                padding:0px 15px 12px 15px;
+            .bottom {
+                font-size: 13px;
+                padding: 15px;
             }
+
+            .bottom i {
+                border-width: 0 .55vh .55vh 0;
+                padding: .55vh;
+            }
+
+            .inner {
+                padding: 0px 15px 12px 15px;
+            }
+
             .card {
-            max-width: 250px;
-            margin: 10px;
-        }
-        .card h3{
-            font-size: 16px;
-        }
-        .card p{
-            font-size: 16px;
-        }
+                max-width: 250px;
+                margin: 10px;
+            }
+
+            .card h3 {
+                font-size: 16px;
+            }
+
+            .card p {
+                font-size: 16px;
+            }
+
             .arrow {
                 border-width: 0 1.25vh 1.25vh 0;
                 padding: 1.75vh;
@@ -382,27 +433,31 @@
         .button>.ld {
             font-size: initial
         }
-        .bottom{
+
+        .bottom {
             bottom: 0px;
-            width:100%;
+            width: 100%;
             background: var(--bg);
             display: block;
-            color:white;
+            color: white;
             text-transform: uppercase;
             font-weight: 900;
             text-decoration: none;
             transition: background .5s;
         }
-        .bottom i{
+
+        .bottom i {
             float: right;
             margin-top: 0px;
             border-color: white;
         }
-        .bottom:hover{
+
+        .bottom:hover {
             background: var(--accent);
             color: black
         }
-        .bottom:hover i{
+
+        .bottom:hover i {
             border-color: black;
         }
     </style>
@@ -432,6 +487,45 @@
                 I'm a U1 student at McGill University who's passionate about next-gen
                 technologies as well as using technology to connect people and ideas.
             </p>
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <div class="titles">
+                    <h3>Web Developer</h3>
+                    <h4>Model United Nations Northwest</h4>
+                    <h5>December 2017 - November 2019</h5>
+                </div>
+                <div class="text">
+                    <p>Served as Under-Secretary-General of Technology on eight Secretariats for Model United Nations
+                        conferences run by Model United Nations Northwest, an organization dedicated to supporting the
+                        Model United Nations circuit in Washington State. I was in charge of web development as well
+                        conference IT, which involved managing our network setup and managing GSuite accounts for our
+                        staff members. I designed, developed and maintained four different websites for different
+                        conferences.</p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="titles">
+                    <h3>Intern Teacher</h3>
+                    <h4>Blaze Robotics</h4>
+                    <h5>August 2019</h5>
+                </div>
+                <div class="text">
+                    <p>Designed the week-long curriculum for all levels of VEX EDR taught at summer camp. Taught
+                        robotics summer camps to a small group of K-8 kids. Assisted the director in fostering
+                        elementary/middle school students' interest in robotics.</p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="titles">
+                    <h3>App Development Intern</h3>
+                    <h4>SAP Concur</h4>
+                    <h5>January 2018 - May 2018</h5>
+                </div>
+                <div class="text">
+                    <p>Directed a small team to develop an Andriod app utilizing a weather API to dynamically adjust
+                        background tasks. Pitched final prototype to Concur's head of app development.</p>
+                </div>
+            </div>
             <h2 style="margin-bottom: 15px;">Projects</h2>
         </div>
         <div class="overflow">
