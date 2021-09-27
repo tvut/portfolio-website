@@ -1,0 +1,173 @@
+@media screen and (min-width: 1278px) {
+    .half-center h1 {
+        font-size: 128px;
+        margin-bottom: -36px;
+    }
+    .container {
+        max-width: 1074px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 70px 0 70px 0;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .arrow {
+        border-width: 0 2vh 2vh 0;
+        padding: 1.75vh;
+    }
+    nav a {
+        color: var(--bg);
+        transition: color .3s;
+    }
+    nav a:hover {
+        color: white
+    }
+    nav a:hover .arrow {
+        border: solid white;
+        border-width: 0 2vh 2vh 0;
+    }
+    nav div {
+        position: absolute;
+        top: 4vh;
+        right: 4vh;
+        text-align: right;
+    }
+    nav svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40vh;
+        width: 40vh;
+        fill: var(--accent)
+    }
+    nav h3 {
+        font-size: 3vh;
+    }
+    nav h1 {
+        font-size: 4vh;
+    }
+    nav h1, h3 {
+        margin: 5;
+        text-transform: uppercase;
+    }
+    .card {
+        max-width: 400px;
+        margin: 30px;
+    }
+    .card h3 {
+        font-size: 22px;
+    }
+    .card p {
+        font-size: 22px;
+    }
+    .inner {
+        padding: 20px 30px 20px 30px;
+    }
+    .bottom {
+        font-size: 18px;
+        ;
+        padding: 20px;
+    }
+    .bottom i {
+        border-width: 0 .75vh .75vh 0;
+        padding: .75vh;
+    }
+    .text {
+        padding-left: 40px;
+    }
+    .experience-card {
+        padding: 20px;
+        border-left: 5px var(--bg) solid;
+        justify-content: flex-start;
+    }
+    .titles, .text {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h2 {
+        font-size: 36px;
+    }
+    .experience-card {
+        margin-bottom: 0px;
+        margin-top: 25px;
+        border-top: 5px var(--bg) solid;
+    }
+    .bottom {
+        font-size: 13px;
+        padding: 15px;
+    }
+    .bottom i {
+        border-width: 0 .55vh .55vh 0;
+        padding: .55vh;
+    }
+    .inner {
+        padding: 0px 15px 12px 15px;
+    }
+    .card {
+        max-width: 75vw;
+        margin-right: 7vw;
+        box-shadow: 0px 0px 4px 0px var(--bg);
+    }
+    .overflow{
+        padding-left:7vw;
+        padding-right:7vw;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    .arrow {
+        border-width: 0 1.25vh 1.25vh 0;
+        padding: 1.75vh;
+    }
+    nav svg {
+        display: none;
+    }
+    nav a {
+        color: var(--bg);
+        text-decoration: none;
+    }
+    nav {
+        background-color: var(--accent);
+        padding: 7vw;
+    }
+    .arrow {
+        float: right;
+        display: inline-block;
+        margin-top: -45px;
+    }
+    nav h1, nav h3 {
+        margin: 0px;
+    }
+    .half-center {
+        height: 33vh;
+        padding: 7vw;
+    }
+    .half-center h1 {
+        font-size: 15vw;
+        text-align: left;
+    }
+    .container {
+        padding: 7vw;
+    }
+    .container p {
+        font-size: 20px;
+    }
+    .tri {
+        width: 100%;
+        border-top: 5px var(--bg) solid;
+        margin-bottom: 15px;;
+    }
+    .tri h4{
+        font-size: 20px;
+    }
+}

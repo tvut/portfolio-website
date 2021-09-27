@@ -13,14 +13,14 @@ html {
 }
 
 ::-webkit-scrollbar {
-height: 10px;
-width: 12px;
-background: transparent;
-border-radius: 10px;
+    height: 10px;
+    width: 12px;
+    background: transparent;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--bg);
+    background: var(--bg);
 }
 
 .bg {
@@ -56,20 +56,18 @@ body {
     /* background-color: var(--bg); */
 }
 
-body,
-p {
+body, p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: black;
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3{
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
 }
@@ -87,7 +85,6 @@ h6 {
         font-size: 128px;
         margin-bottom: -36px;
     }
-
     .container {
         max-width: 1074px;
         margin-left: auto;
@@ -118,6 +115,7 @@ h6 {
                 margin-left: auto;
                 margin-right: auto;
             } */
+
 .overflow {
     padding: 0px 30px 0px 30px;
     overflow-x: auto;
@@ -160,105 +158,7 @@ h6 {
     transform: rotate(180deg);
 }
 
-@media screen and (min-width: 641px) {
-    .arrow {
-        border-width: 0 2vh 2vh 0;
-        padding: 1.75vh;
-    }
-
-    nav a {
-        color: var(--bg);
-        transition: color .3s;
-    }
-
-    nav a:hover {
-        color: white
-    }
-
-    nav a:hover .arrow {
-        border: solid white;
-        border-width: 0 2vh 2vh 0;
-    }
-
-    nav div {
-        position: absolute;
-        top: 4vh;
-        right: 4vh;
-        text-align: right;
-    }
-
-    nav svg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 40vh;
-        width: 40vh;
-        fill: var(--accent)
-    }
-
-    nav h3 {
-        font-size: 3vh;
-    }
-
-    nav h1 {
-        font-size: 4vh;
-    }
-
-    nav h1,
-    h3 {
-        margin: 5;
-        text-transform: uppercase;
-    }
-
-    .card {
-        max-width: 400px;
-        margin: 30px;
-    }
-
-    .card h3 {
-        font-size: 22px;
-    }
-
-    .card p {
-        font-size: 22px;
-    }
-
-    .inner {
-        padding: 20px 30px 20px 30px;
-    }
-
-    .bottom {
-        font-size: 18px;
-        ;
-        padding: 20px;
-    }
-
-    .bottom i {
-        border-width: 0 .75vh .75vh 0;
-        padding: .75vh;
-    }
-
-    .text {
-        padding-left: 40px;
-    }
-
-    .experience-card {
-        padding: 20px;
-        border-left: 5px var(--bg) solid;
-        justify-content: flex-start;
-    }
-
-    .titles,
-    .text {
-        display: inline-block;
-        width: 49%;
-        vertical-align: top;
-    }
-}
-
-.experience-card h3,
-.experience-card h4,
-.experience-card h5 {
+.experience-card h3, .experience-card h4, .experience-card h5 {
     margin-top: 8px;
     margin-left: 0px;
     margin-bottom: 8px;
@@ -274,93 +174,6 @@ h6 {
 
 .text p {
     font-size: 22px;
-}
-
-@media screen and (max-width: 640px) {
-    h2 {
-        font-size: 36px;
-    }
-
-    .experience-card {
-        margin-bottom: 0px;
-        margin-top: 25px;
-        border-top: 5px var(--bg) solid;
-    }
-
-    .bottom {
-        font-size: 13px;
-        padding: 15px;
-    }
-
-    .bottom i {
-        border-width: 0 .55vh .55vh 0;
-        padding: .55vh;
-    }
-
-    .inner {
-        padding: 0px 15px 12px 15px;
-    }
-
-    .card {
-        max-width: 250px;
-        margin: 10px;
-    }
-
-    .card h3 {
-        font-size: 16px;
-    }
-
-    .card p {
-        font-size: 16px;
-    }
-
-    .arrow {
-        border-width: 0 1.25vh 1.25vh 0;
-        padding: 1.75vh;
-    }
-
-    nav svg {
-        display: none;
-    }
-
-    nav a {
-        color: var(--bg);
-        text-decoration: none;
-    }
-
-    nav {
-        background-color: var(--accent);
-        padding: 7vw;
-    }
-
-    .arrow {
-        float: right;
-        display: inline-block;
-        margin-top: -45px;
-    }
-
-    nav h1,
-    nav h3 {
-        margin: 0px;
-    }
-
-    .half-center {
-        height: 33vh;
-        padding: 7vw;
-    }
-
-    .half-center h1 {
-        font-size: 15vw;
-        text-align: left;
-    }
-
-    .container {
-        padding: 7vw;
-    }
-
-    .container p {
-        font-size: 20px;
-    }
 }
 
 .card {
@@ -406,7 +219,6 @@ h6 {
     font-weight: 600;
     transition: all .3s;
     text-decoration: none;
-
 }
 
 .button:hover {
@@ -471,17 +283,22 @@ h6 {
 .bottom:hover i {
     border-color: black;
 }
+
 .tri {
     width: 33%;
     display: inline-block;
     vertical-align: top;
 }
-.tri h4{
+
+.tri h4 {
     font-size: 24px;
     margin-bottom: 0px;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.tri h3{
-    margin-Left:0px;
-    color: var(--bg)
+
+.tri h3 {
+    margin-Left: 0px;
+    color: var(--bg);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
