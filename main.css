@@ -7,6 +7,10 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    transition: color .3s;
+}
+
 :root {
     --bg: #943156;
     --accent: #f0d00a;
@@ -36,10 +40,11 @@ h4 {
 }
 
 .half-center {
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
     display: flex;
     text-align: center;
+    overflow: hidden;
 }
 
 .half-center h1 {
@@ -78,19 +83,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .container p {
     font-size: 36px;
-}
-
-@media screen and (min-width: 1278px) {
-    .half-center h1 {
-        font-size: 128px;
-        margin-bottom: -36px;
-    }
-    .container {
-        max-width: 1074px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 70px 0 70px 0;
-    }
 }
 
 .arrow {
@@ -202,61 +194,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
 }
 
-.button {
-    box-sizing: border-box;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    white-space: nowrap;
-    background-color: white;
-    border-radius: 13px;
-    border: 1.5px var(--bg) solid;
-    padding: 13px 63px 13px 23px;
-    color: var(--bg);
-    margin: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all .3s;
-    text-decoration: none;
-}
-
-.button:hover {
-    background: var(--accent);
-    color: var(--bg);
-    border: 3px var(--accent) solid
-}
-
-.button>div {
-    color: #999999;
-    font-size: 10px;
-    font-weight: initial;
-    font-style: normal;
-    text-align: center;
-    margin: 0px 0px 0px 0px
-}
-
-.button>i {
-    font-size: 28px;
-    color: var(--bg);
-    background: var(--accent);
-    border-radius: 10px;
-    border: 0px solid transparent;
-    border-width: 0px 13px 13px 0px;
-    padding: 10px 6px 5px 16px;
-    position: absolute;
-    top: 0px;
-    left: px;
-    bottom: 0px;
-    right: 0px;
-    width: 53px;
-    height: 46.3px
-}
-
-.button>.ld {
-    font-size: initial
-}
-
 .bottom {
     bottom: 0px;
     width: 100%;
@@ -266,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 900;
     text-decoration: none;
-    transition: background .5s;
+    transition: background .3s;
 }
 
 .bottom i {
@@ -301,4 +238,57 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--bg);
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.contact-bar{
+    background-color: var(--accent);
+    font-size: 40px;
+    color: var(--bg);
+}
+.contact-bar .container {
+    padding-top:20px;
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.social i{
+    margin-right: 20px;
+    margin-left:6px;
+}
+.social{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    margin: 6px;
+    padding:10px;
+    border-radius: 15px;
+    color:var(--bg);
+    text-decoration: none;
+    transition: all .3s;
+}
+.social:hover{
+    color: #FFF;
+    background: #943156;
+}
+.social h3{
+    font-size: 22px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer{
+    text-align: center;
+    background-color: var(--bg);
+    margin-top:-1px;
+}
+footer p{ 
+    font-size: 20px !important;
+    text-transform: uppercase;
+    color:white
+}
+footer a{
+    color:var(--accent)
+}
+footer a:hover{
+    color:#FFF
 }

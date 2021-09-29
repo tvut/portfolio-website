@@ -12,7 +12,7 @@
 }
 
 @media screen and (min-width: 641px) {
-    .arrow {
+    /* .arrow {
         border-width: 0 2vh 2vh 0;
         padding: 1.75vh;
     }
@@ -50,7 +50,7 @@
     nav h1, h3 {
         margin: 5;
         text-transform: uppercase;
-    }
+    } */
     .card {
         max-width: 400px;
         margin: 30px;
@@ -85,6 +85,27 @@
         display: inline-block;
         width: 49%;
         vertical-align: top;
+    }
+    .small-socials{
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:100vw;
+        text-align: right;
+        font-size: 36px;
+    }
+    .small-socials a{
+        text-decoration: none;
+        color:var(--accent);
+        padding-left:15px;
+        transition: color .3s
+    }
+    .small-socials a:hover{
+        color:#FFF;
+    }
+    .small-socials .container{
+        padding-top:20px;
+        padding-bottom:0px;
     }
 }
 
@@ -126,7 +147,7 @@
     .card p {
         font-size: 16px;
     }
-    .arrow {
+    /* .arrow {
         border-width: 0 1.25vh 1.25vh 0;
         padding: 1.75vh;
     }
@@ -148,6 +169,23 @@
     }
     nav h1, nav h3 {
         margin: 0px;
+    } */
+    .small-socials {
+        background-color: var(--accent);
+        font-size: 30px;
+        text-align: left;
+    }
+    .small-socials .container{
+        padding-top:4vw;
+        padding-bottom: 4vw;
+    }
+    .small-socials a{
+        margin-right:20px;
+        text-decoration: none;
+        color: var(--bg);
+    }
+    .small-socials a:focus, .small-socials a:hover{
+        color:white
     }
     .half-center {
         height: 33vh;
@@ -170,5 +208,17 @@
     }
     .tri h4{
         font-size: 20px;
+    }
+    .contact-bar{
+        font-size: 30px;
+    }
+    .social{
+        width:100%;
+    }
+    .social i{
+        margin-left: 0px;
+    }
+    .social h3{
+        font-size:18px;
     }
 }
