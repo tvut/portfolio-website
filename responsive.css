@@ -221,4 +221,7 @@
     .social h3{
         font-size:18px;
     }
+    footer p{
+        font-size: 14px !important;
+    }
 }
