@@ -190,6 +190,7 @@
     .half-center {
         height: 33vh;
         padding: 7vw;
+        background: linear-gradient(180deg, rgba(148,49,86,1) 20%, rgba(240,208,10,1) 100%);
     }
     .half-center h1 {
         font-size: 15vw;
