@@ -201,7 +201,7 @@ ul {
     text-align: left;
 }
 
-.card img {
+.card img, .card video {
     width: 100%;
 }
 
