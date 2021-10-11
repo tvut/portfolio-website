@@ -21,11 +21,574 @@
     <!-- Assets -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Lato:wght@900&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Lato:wght@900&display=swap" rel="stylesheet" /> -->
     <link rel="stylesheet" type="text/css" href="assets/dev/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/dev/responsive.css" />
-    <link rel="stylesheet" type="text/css"
-        href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type='text/javascript'>
+        //<![CDATA[ 
+        function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+        //]]> 
+        </Script>
+    <script type='text/javascript'>
+        //<![CDATA[ 
+        function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Lato:wght@900&display=swap");
+        //]]> 
+        </Script>
+    <!-- <link rel="stylesheet" type="text/css"
+        href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <style type="text/css">
+        html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    transition: color .3s;
+}
+
+:root {
+    --bg: #943156;
+    --accent: #f0d00a;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 12px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg);
+}
+
+.bg {
+    background-color: white;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+.half-center {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(148,49,86,1) 35%, rgba(240,208,10,1) 100%);
+}
+
+.half-center h1 {
+    align-self: flex-end;
+    text-align: center;
+    width: 100vw;
+    color: white;
+    font-size: 10vw;
+    margin-bottom: -2.8vw
+}
+
+body {
+    /* background: -webkit-linear-gradient(45deg, #0f3443, #943156); */
+    background-color: var(--bg);
+}
+
+body, p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+.container {
+    padding: 8vh 8vw 8vh 8vw
+}
+
+.container p {
+    font-size: 36px;
+}
+
+.arrow {
+    transition: border .3s;
+    border: solid var(--bg);
+    margin-top: 10px;
+    margin-right: 2vh;
+    display: inline-block;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/* .overflow{
+                overflow-x: auto;
+                color:black;
+                flex-wrap: nowrap;
+                width: 90vw;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            } */
+
+.overflow {
+    padding: 0px 30px 0px 30px;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.project {
+    display: block;
+    height: 40vh;
+    width: 40vh;
+    float: left;
+    flex-shrink: 0;
+    margin: 1.5vh;
+    padding: 3vh;
+    position: relative;
+    border: var(--accent) solid 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.project svg {
+    fill: var(--accent);
+}
+
+.svg-top {
+    top: -5px;
+    right: -5px;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+}
+
+.svg-bottom {
+    bottom: -5px;
+    left: -5px;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    transform: rotate(180deg);
+}
+
+.experience-card h3, .experience-card h4, .experience-card h5 {
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
+
+.experience-card h4 {
+    font-size: 28px;
+}
+
+.experience-card h5 {
+    font-size: 14px;
+}
+
+.text p, .text ul {
+    font-size: 22px;
+}
+ul {
+    margin-block: 10px;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 7px 0px var(--bg);
+    flex-shrink: 0;
+}
+
+.card h4{
+    color:var(--bg);
+    text-align: left;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.card h3 {
+    margin-top:10px;
+    margin-bottom:8px;
+    margin-left: -0px;
+    text-align: left;
+}
+
+.card p {
+    color: black;
+    line-height: 140%;
+    text-align: left;
+}
+
+.card img, .card video, .card picture {
+    width: 100%;
+}
+
+.inner {
+    text-align: right;
+}
+
+.bottom {
+    bottom: 0px;
+    width: 100%;
+    background: var(--bg);
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+.bottom i {
+    float: right;
+    margin-top: 0px;
+    border-color: white;
+}
+
+.bottom:hover {
+    background: var(--accent);
+    color: black
+}
+
+.bottom:hover i {
+    border-color: black;
+}
+
+.tri {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tri h4 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.tri h3 {
+    margin-Left: 0px;
+    color: var(--bg);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contact-bar{
+    background-color: var(--accent);
+    font-size: 40px;
+    color: var(--bg);
+}
+.contact-bar .container {
+    padding-top:20px;
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.social i{
+    margin-right: 20px;
+    margin-left:6px;
+}
+.social{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    margin: 6px;
+    padding:10px;
+    border-radius: 15px;
+    color:var(--bg);
+    text-decoration: none;
+    transition: all .3s;
+}
+.social:hover{
+    color: #FFF;
+    background: #943156;
+}
+.social h3{
+    font-size: 22px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer{
+    text-align: center;
+    background-color: var(--bg);
+    margin-top:-1px;
+}
+footer p{ 
+    font-size: 20px !important;
+    text-transform: uppercase;
+    color:white;
+}
+footer a{
+    color:var(--accent)
+}
+footer a:hover{
+    color:#FFF
+}
+@media screen and (min-width: 1278px) {
+    .half-center h1 {
+        font-size: 128px;
+        margin-bottom: -36px;
+    }
+    .container {
+        max-width: 1074px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 70px 0 70px 0;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    /* .arrow {
+        border-width: 0 2vh 2vh 0;
+        padding: 1.75vh;
+    }
+    nav a {
+        color: var(--bg);
+        transition: color .3s;
+    }
+    nav a:hover {
+        color: white
+    }
+    nav a:hover .arrow {
+        border: solid white;
+        border-width: 0 2vh 2vh 0;
+    }
+    nav div {
+        position: absolute;
+        top: 4vh;
+        right: 4vh;
+        text-align: right;
+    }
+    nav svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40vh;
+        width: 40vh;
+        fill: var(--accent)
+    }
+    nav h3 {
+        font-size: 3vh;
+    }
+    nav h1 {
+        font-size: 4vh;
+    }
+    nav h1, h3 {
+        margin: 5;
+        text-transform: uppercase;
+    } */
+    .card {
+        max-width: 400px;
+        margin: 30px;
+    }
+    .card h4{
+        font-size:20px;
+    }
+    .card h3 {
+        font-size: 22px;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .inner {
+        padding: 20px 30px 20px 30px;
+    }
+    .bottom {
+        font-size: 18px;
+        ;
+        padding: 20px;
+    }
+    .bottom i {
+        border-width: 0 .75vh .75vh 0;
+        padding: .75vh;
+    }
+    .text {
+        padding-left: 40px;
+    }
+    .experience-card {
+        padding: 20px;
+        border-left: 5px var(--bg) solid;
+        justify-content: flex-start;
+    }
+    .titles, .text {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+    .small-socials{
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:100vw;
+        text-align: right;
+        font-size: 36px;
+    }
+    .small-socials a{
+        text-decoration: none;
+        color:var(--accent);
+        padding-left:15px;
+        transition: color .3s
+    }
+    .small-socials a:hover{
+        color:#FFF;
+    }
+    .small-socials .container{
+        padding-top:20px;
+        padding-bottom:0px;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .half-center{
+        height: 28vh;
+        background: linear-gradient(180deg, rgba(148,49,86,1) 35%, rgba(240,208,10,1) 100%);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h2 {
+        font-size: 36px;
+    }
+    .experience-card {
+        margin-bottom: 0px;
+        margin-top: 32px;
+        border-top: 5px var(--bg) solid;
+    }
+    .bottom {
+        font-size: 13px;
+        padding: 15px;
+    }
+    .bottom i {
+        border-width: 0 .55vh .55vh 0;
+        padding: .55vh;
+    }
+    .inner {
+        padding: 0px 15px 12px 15px;
+    }
+    .card {
+        max-width: 75vw;
+        margin-right: 7vw;
+        box-shadow: 0px 0px 4px 0px var(--bg);
+    }
+    .overflow{
+        padding-left:7vw;
+        padding-right:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .card h4{
+        font-size:14px;
+        margin-top:12px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    /* .arrow {
+        border-width: 0 1.25vh 1.25vh 0;
+        padding: 1.75vh;
+    }
+    nav svg {
+        display: none;
+    }
+    nav a {
+        color: var(--bg);
+        text-decoration: none;
+    }
+    nav {
+        background-color: var(--accent);
+        padding: 7vw;
+    }
+    .arrow {
+        float: right;
+        display: inline-block;
+        margin-top: -45px;
+    }
+    nav h1, nav h3 {
+        margin: 0px;
+    } */
+    .small-socials {
+        background-color: var(--accent);
+        font-size: 30px;
+        text-align: left;
+    }
+    .small-socials .container{
+        padding-top:4vw;
+        padding-bottom: 4vw;
+    }
+    .small-socials a{
+        margin-right:20px;
+        text-decoration: none;
+        color: var(--bg);
+    }
+    .small-socials a:focus, .small-socials a:hover{
+        color:white
+    }
+    .half-center {
+        height: 33vh;
+        padding: 7vw;
+        background: var(--bg);
+        /* background: linear-gradient(180deg, #943156 10%, #0f3443 150%); */
+    }
+    .half-center h1 {
+        font-size: 15vw;
+        text-align: left;
+    }
+    .container {
+        padding: 7vw;
+    }
+    .container p {
+        font-size: 20px;
+    }
+    .tri {
+        width: 100%;
+        border-top: 5px var(--bg) solid;
+        margin-bottom: 28px;
+    }
+    .tri h4{
+        font-size: 20px;
+    }
+    .contact-bar{
+        font-size: 30px;
+    }
+    .social{
+        width:100%;
+    }
+    .social i{
+        margin-left: 0px;
+    }
+    .social h3{
+        font-size:18px;
+    }
+    footer p{
+        font-size: 14px !important;
+    }
+}
+    </style>
 </head>
 
 <body>
