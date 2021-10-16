@@ -1,4 +1,2 @@
-### Push to server:
-```git push server master```
-### Push to github:
-```git push origin master```
+# Portfolio-Website
+My portfolio website hosted at [tristans.ca](<tristans.ca>). The website is built from scratch in HTML and CSS. All GIFs were replaced with HTML5 videos to help speed up page load times.
