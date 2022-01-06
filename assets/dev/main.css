@@ -9,6 +9,11 @@ html {
 
 a {
     transition: color .3s;
+    color:#943156;
+}
+
+a:hover{
+    color: #f0d00a;
 }
 
 :root {
